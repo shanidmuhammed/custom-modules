@@ -11,6 +11,8 @@ class Student(models.Model):
     contact_number = fields.Char(string="Contact Number", required=True)
     place = fields.Char(string="Place", required=True)
 
+    course_id = fields.Many2one('institution.course', string='Course', required=True)
+
     ref = fields.Char(string="Student ID", readonly=True, default='New')
 
     age=fields.Integer(string="Age", compute='_compute_age')
