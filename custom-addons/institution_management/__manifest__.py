@@ -6,6 +6,7 @@
     'data': [
         'security/ir.model.access.csv',
         'views/menu.xml',
+        'views/course_view.xml',
         'data/student_sequence.xml'
     ]
 }

@@ -1,0 +1,13 @@
+<!--<odoo>-->
+<!--        <form string="Course">-->
+<!--                    <sheet>-->
+<!--                        <div class="oe_button_box" name="button_box">-->
+<!--                            <button name="action_view_students"-->
+<!--                                    type="object"-->
+<!--                                    class="oe_stat_button"-->
+<!--                                    icon="fa-users">-->
+<!--                            </button>-->
+<!--                        </div>-->
+<!--                    </sheet>-->
+<!--                </form>-->
+<!--</odoo>-->
