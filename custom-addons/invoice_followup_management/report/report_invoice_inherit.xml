@@ -1,0 +1,13 @@
+<odoo>
+    <template id="report_invoice_document_inherit_followup"
+              inherit_id="account.report_invoice_document">
+
+        <xpath expr="//div[@name='due_date']" position="after">
+                <div class="mt-2">
+                    <strong>Follow-up Status:</strong>
+                    <span t-esc="o.followup_status"/>
+                </div>
+        </xpath>
+
+    </template>
+</odoo>

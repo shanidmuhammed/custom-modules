@@ -1,0 +1,23 @@
+<odoo>
+    <data>
+        <record id="view_account_move_filter_inherit_overdue" model="ir.ui.view">
+            <field name="name">account.move.select.inherit.overdue</field>
+            <field name="model">account.move</field>
+            <field name="inherit_id" ref="account.view_account_invoice_filter"/>
+            <field name="arch" type="xml">
+                <filter name="cancel" position="after">
+                    <separator>
+                        <filter string="Overdue Invoices"
+                            name="filter_overdue"
+                            domain="[('is_overdue', '=', 'OVERDUE')]"/>
+
+                        <filter string="Follow-up Due Today"
+                            name="filter_followup_due_today"
+                            domain="[('next_followup_date', '=', context_today())]"/>
+                    </separator>
+                </filter>
+
+            </field>
+        </record>
+    </data>
+</odoo>
